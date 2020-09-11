@@ -1,46 +1,57 @@
-
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, p{ padding: inherit; margin: inherit; }
+h1, h2, h3, p {
+  padding: inherit;
+  margin: inherit;
+}
 
 body {
-    font-family: "Inter", sans-serif;
-  }
-  h2 {
-    text-align: center;
-    text-shadow: 2px 1px 2px #777;
-    margin-bottom: 1%;
-    padding-bottom: 1%;
-    padding-top: 2%;
-  }
+  font-family: "Inter", sans-serif;
+}
 
-  h3 {
-    color: black;
-    text-shadow: 2px 1px 2px #777;
-    border: 2px solid #111;
-    background-color: #999;
-    padding-left: 3%;
-    padding-top: 3%;
-    margin-top: 2%;
-    margin-right: 2%;
-  }
+h2 {
+  text-align: center;
+  text-shadow: 2px 1px 2px #777;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  padding-top: 2%;
+}
 
-  .red{background: red;}
-  .green{background: #00aa00;}
-  .yellow{background: yellow;}
+h3 {
+  color: black;
+  text-shadow: 2px 1px 2px #777;
+  border: 2px solid #111;
+  background-color: #999;
+  padding-left: 3%;
+  padding-top: 3%;
+  margin-top: 2%;
+  margin-right: 2%;
+}
 
-.containar{
+.red {
+  background: red;
+}
+
+.green {
+  background: #00aa00;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.containar {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-  "item1 item2 item3";
+    "item1 item2 item3";
 }
 
-.items-title{
+.items-title {
   float: right;
   padding-right: 5%;
   margin-right: 2%;
@@ -55,32 +66,41 @@ body {
   background-color: #999;
 }
 
-.item1{ grid-area: item1; }
-.item2{ grid-area: item2; }
-.item3{ grid-area: item3; }
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
 
 /*for mobile*/
-@media only screen and (max-width: 767px){
-  .containar{
+@media only screen and (max-width: 767px) {
+  .containar {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    "item1"
-    "item2"
-    "item3";
+      "item1"
+      "item2"
+      "item3";
   }
 }
 
 /*for tablet*/
-@media only screen and (max-width: 991px) and (min-width: 768px){
-  .containar{
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .containar {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "item1 item2"
-    "item3 item3";
+      "item1 item2"
+      "item3 item3";
   }
-  .item3{
+
+  .item3 {
     width: 102%;
     margin-left: -1%;
     margin-top: -1%;
