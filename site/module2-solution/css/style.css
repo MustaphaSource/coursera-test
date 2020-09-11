@@ -1,34 +1,59 @@
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, p{ padding: inherit; margin: inherit; }
+
 body {
     font-family: "Inter", sans-serif;
   }
+  h2 {
+    text-align: center;
+    text-shadow: 2px 1px 2px #777;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+  }
+
+  h3 {
+    color: black;
+    text-shadow: 2px 1px 2px #777;
+    border: 2px solid #111;
+    background-color: #999;
+    padding-left: 3%;
+    padding-top: 3%;
+    margin-top: 2%;
+    margin-right: 2%;
+  }
+
+  .red{background: red;}
+  .green{background: #00aa00;}
+  .yellow{background: yellow;}
+
 .containar{
   display: grid;
-  height: 100vh;
-  grid-gap: 0.2rem;
-  /*text-align: center;
-  /*justify-content: center;*/
-  /*align-items: center;*/
+  height: 100%;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
-  "menu menu menu"
   "item1 item2 item3";
 }
 
-.menu-title{ grid-area: menu;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  /*padding-bottom: none;*/
- }
- .menu-items{
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
+.items-title{
+  float: right;
+  padding-right: 5%;
+  margin-right: 2%;
+  padding-top: 0%;
+}
 
- }
-
-
+.content {
+  border: 2px solid #111;
+  padding: 3%;
+  margin: 2%;
+  padding-top: 8%;
+  background-color: #999;
+}
 
 .item1{ grid-area: item1; }
 .item2{ grid-area: item2; }
@@ -38,9 +63,8 @@ body {
 @media only screen and (max-width: 767px){
   .containar{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    "menu"
     "item1"
     "item2"
     "item3";
@@ -51,11 +75,14 @@ body {
 @media only screen and (max-width: 991px) and (min-width: 768px){
   .containar{
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "menu menu"
     "item1 item2"
     "item3 item3";
-
+  }
+  .item3{
+    width: 102%;
+    margin-left: -1%;
+    margin-top: -1%;
   }
 }
