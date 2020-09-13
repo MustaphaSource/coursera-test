@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p, span {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* font-size: 16px; */
+  color: #111;
+  background-color: #9A3844;
+  background-image: url('../img/bg_06.png');
+  background-size: cover;
+  /*/// google fonts ///*/
+  font-family: 'Oxygen', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* header ////////////////////////////////////////////// */
+#header-nav {
+  background-color: #CE953F;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../img/logo-img.png') no-repeat;
+  background-size: contain;
+  width: 196px;
+  height: 150px;
+  margin: 10px 0 0 0;
+}
+
+.navbar-brand h1 {
+  font-family: 'Nanum Brush Script', cursive;
+  /*/// google fonts ///*/
+  color: #3D5942;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 6%;
+  padding-left: 0;
+  font-weight: bold;
+  text-shadow: 1px 2px 1px #fff, 2px 2px 3px #222;
+  line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-brand p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-left: 8%;
+}
+
+#nav-list {
+  padding-top: 8%;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#nav-list a {
+  color: #9A3844;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  /* background: #557c3e; */
+  color: #000;
+  font-weight: bold;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #9A3844;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -48px;
+}
+
+.navbar {
+  min-height: 100px;
+}
+
+/* Extra small devices only ///////////*/
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding-top: 4%;
+    height: 24%;
+  }
+
+  .navbar-brand h1 p {
+    padding-top: 2%;
+    font-size: 4vw;
+  }
+}
