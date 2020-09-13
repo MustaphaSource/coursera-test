@@ -89,6 +89,10 @@ body {
   min-height: 100px;
 }
 
+
+
+
+
 /* Extra small devices only ///////////*/
 @media (max-width: 767px) {
   .navbar-brand {
@@ -100,4 +104,10 @@ body {
     padding-top: 2%;
     font-size: 4vw;
   }
+
 }
+
+
+@media (min-width: 768px) {
+  .d-sm-none {
+    display: none ;
